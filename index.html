@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Funciones con Petalos</title>
+    <!--Styles by Boostrap-->    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!--Styles by Css-->
     <style>
         body{
             font-family: sans-serif;
@@ -13,27 +16,60 @@
         .container{
             height: 50vh;
             margin: 5%;
-
+            
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
-    </style>
+        </style>
+
 </head>
+
 <body>
+    <!-- Modal -->
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur provident beatae eos voluptate, earum, illum inventore, quisquam rerum quam odit totam necessitatibus a quaerat temporibus ab est. Iusto, facilis nisi! Lorem ipsum dolor sit amet consectetur adipisicing elit. In, hic. Ipsam deserunt quisquam vero exercitationem? Nesciunt voluptate corrupti hic, laudantium atque vero, magni est ratione excepturi quo quidem odit expedita perspiciatis tempora itaque adipisci, saepe id voluptatem earum quis tenetur laboriosam ullam placeat! Harum delectus quam, nemo magni accusantium officiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod repellendus rerum voluptatem? Itaque quasi voluptas laboriosam praesentium laborum, sapiente natus commodi dicta dignissimos perspiciatis fugiat rerum maxime soluta corrupti odit?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, tenetur quae expedita laboriosam illo quidem debitis rerum aliquam tempora aspernatur iure saepe minima pariatur iste amet, cumque dolore quaerat quod!Loremlorem
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores vel repudiandae minus dolores itaque? Eius repudiandae, aspernatur in delectus possimus cupiditate nemo, voluptatum harum maiores iure amet. Nobis, fuga doloremque.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, qui. Unde delectus quas distinctio atque. Optio iste accusantium exercitationem, autem ratione natus, officiis ipsum totam reiciendis debitis in quod itaque!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quae vel minima animi saepe perferendis maiores quod impedit. Sint in tenetur dignissimos ea neque debitis maiores voluptas, qui odit aliquam!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex numquam iure pariatur? Modi culpa quae, nesciunt ipsam reiciendis doloremque?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <title>Funciones con Petalos</title>
     <div class="container">
         <h1>Funciones de Petalos</h1>
         <img src="./img/petalos.png" alt="figura-petalos" width="100%">
-        <input id="figura" name="figura" type="number" placeholder="Coloque su figura" >
-        <button id="button">Clickeame</button>
-    </div>
-
-    <div class="container">
-        <div class="resultado" id="resultado"></div>
-    </div>    
+        <input id="figura" name="figura" type="number" maxlength="5" placeholder="Coloque su figura" >
+        <button id="button" type="button" class="btn btn-primary btn-l">Calcular</button>
+        <!-- <button id="button">Clickeame</button> -->
+    </div>  
+    
     
     <!--Script-->
-    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>    
+    
 </body>
 </html>
