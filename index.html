@@ -58,9 +58,18 @@
 
     <title>Funciones con Petalos</title>
     <div class="container">
-        <h1>Funciones de Petalos</h1>
+        <h1>Funciones de Petaos</h1>
         <img src="./img/petalos.png" alt="figura-petalos" width="100%">
-        <input id="figura" name="figura" type="number" maxlength="5" placeholder="Coloque su figura" >
+        
+        <input  type="number" id="figura" name="figura" placeholder="Coloque su figura" >
+
+        <!-- Input by bootstrap -->
+        <div class="input-group mb-3">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+          <!-- con esta funcion limito que pongan mas de 4 digitos -->
+          <input onKeyPress="if(this.value.length==4) return false;" type="number"  class="form-control" placeholder="Indica numero de figura que quieras calcular" aria-label="Example text with button addon" aria-describedby="button-addon1">
+        </div>
+
         <button id="button" type="button" class="btn btn-primary btn-l">Calcular</button>
         <!-- <button id="button">Clickeame</button> -->
     </div>  
