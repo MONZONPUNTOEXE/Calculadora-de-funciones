@@ -3,13 +3,24 @@
 const boton = document.getElementById("button");
 const figura = document.getElementById("figura").value;
 
+const myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {
+    keyboard: false,
+
+  })
+
+
+
+
 boton.addEventListener('click', () =>{
     const figura = document.getElementById("figura").value;
     if (figura <= 0) {
+
+    
     Swal.fire({
         icon: 'error',
         title: 'Oops...',
         text: 'Ingrese un numero mayor a 0',
+        
         
     })
     }
@@ -39,9 +50,11 @@ Swal.fire({
     
     const petalos = 4 * figura + 2;
     document.getElementById("resultado");
-    
+
+
     console.log('I was closed by the timer');
-Swal.fire('La figura N° ' + figura + ' va a tener ' + petalos +' mosaicos');
+    myModal.show()
+// Swal.fire('La figura N° ' + figura + ' va a tener ' + petalos +' mosaicos');
 }
 })
 
