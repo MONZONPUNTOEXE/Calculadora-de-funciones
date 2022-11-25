@@ -28,14 +28,26 @@
         /* display: flex; */
         /* justify-content: center; */
         /* word-spacing: 2px; */
-        text-align: justify;
+        text-align: left;
         margin: 30px;
         
 
       }
 
+      .hijo2{
+        
+
+        text-align: left;
+        margin: 0px;
+        
+        
+        /* justify-content: flex-start; */
+        
+
+      }
+
       .container{
-            height: 40vh;
+            height: 50vh;
             
             
             display: flex;
@@ -43,6 +55,8 @@
             justify-content: center;
             align-items: center;
         }
+
+        
         </style>
 
 </head>
@@ -57,22 +71,22 @@
 
   <div class="container">
     <h1>Función Puntos</h1>
-    <p> <b>Inserte</b> el número de figura y luego pulse <b>Calcular</b> para obtener el resultado.</p>
-    <img src="./img/puntos-funcion-1.png" alt="figura-petalos" width="100%">
+    <p class="hijo2"> <b>Inserte</b> el número de figura y luego pulse <b>Calcular</b> para obtener el resultado.</p>
+    <img src="./img/puntos-funcion-1.png" alt="figura-funcion" width="100%">
     
     <!-- Input by bootstrap -->
     <div class="input-group mb-3">
-            <button  id="button" class="btn btn-outline-secondary" data-bs-toggle="hidden.bs.modal" data-bs-target="#exampleModal" type="submit" id="button-addon1">Calcular</button>
+            <button  id="button-puntos" class="btn btn-outline-secondary" data-bs-toggle="hidden.bs.modal" data-bs-target="#exampleModal-puntos" type="submit" id="button-addon1">Calcular</button>
     
                <!-- Modal -->
-               <div class="modal fade" id="exampleModal" tabindex="-1">
+               <div class="modal fade" id="exampleModal-puntos" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Resultado</h5>
+                      <h5 class="modal-title" id="exampleModalLabel-puntos">Resultado</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body" id="modal-content">
+                    <div class="modal-body" id="modal-content-puntos">
                         <p>...</p>
                     </div>
                     <div class="modal-footer">
@@ -83,20 +97,20 @@
                 </div>
               </div>
             <!-- con esta funcion limito que pongan mas de 4 digitos -->
-            <input onkeyup="checkForEnterKey(this.value)" id="figura" name="figura" onKeyPress="if(this.value.length==4) return false;" type="number"  class="form-control" placeholder="índica el número de figuras que quieras calcular" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            <input onkeyup="checkForEnterKey(this.value)" id="figuraPuntos" name="figura" onKeyPress="if(this.value.length==4) return false;" type="number"  class="form-control" placeholder="índica el número de figuras que quieras calcular" aria-label="Example text with button addon" aria-describedby="button-addon1">
           </div>
       </div> 
       <hr>
-
-      <div class="container">
+  
+      <!-- <div class="container">
         <h1>Exagonales</h1>
         <img src="./img/exagonales-funcion-2.png" alt="figura-petalos" width="100%">
         
-        <!-- Input by bootstrap -->
+         Input by bootstrap 
         <div class="input-group mb-3">
                 <button  id="button" class="btn btn-outline-secondary" data-bs-toggle="hidden.bs.modal" data-bs-target="#exampleModal" type="submit" id="button-addon1">Calcular</button>
         
-                   <!-- Modal -->
+                    Modal 
                    <div class="modal fade" id="exampleModal" tabindex="-1">
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                       <div class="modal-content">
@@ -114,7 +128,7 @@
                       </div>
                     </div>
                   </div>
-                <!-- con esta funcion limito que pongan mas de 4 digitos -->
+                 con esta funcion limito que pongan mas de 4 digitos 
                 <input onkeyup="checkForEnterKey(this.value)" id="figura" name="figura" onKeyPress="if(this.value.length==4) return false;" type="number"  class="form-control" placeholder="índica el número de figuras que quieras calcular" aria-label="Example text with button addon" aria-describedby="button-addon1">
               </div>
           </div> 
@@ -124,11 +138,11 @@
             <h1>Cuadrados</h1>
             <img src="./img/cuadrados-funcion-3.png" alt="figura-petalos" width="100%">
             
-            <!-- Input by bootstrap -->
+             Input by bootstrap 
             <div class="input-group mb-3">
                     <button  id="button" class="btn btn-outline-secondary" data-bs-toggle="hidden.bs.modal" data-bs-target="#exampleModal" type="submit" id="button-addon1">Calcular</button>
             
-                       <!-- Modal -->
+                        Modal 
                        <div class="modal fade" id="exampleModal" tabindex="-1">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                           <div class="modal-content">
@@ -146,7 +160,7 @@
                           </div>
                         </div>
                       </div>
-                    <!-- con esta funcion limito que pongan mas de 4 digitos -->
+                     con esta funcion limito que pongan mas de 4 digitos 
                     <input onkeyup="checkForEnterKey(this.value)" id="figura" name="figura" onKeyPress="if(this.value.length==4) return false;" type="number"  class="form-control" placeholder="índica el número de figuras que quieras calcular" aria-label="Example text with button addon" aria-describedby="button-addon1">
                   </div>
               </div> 
@@ -157,11 +171,11 @@
                 <h1>Cuadrados</h1>
                 <img src="./img/cuadrados2-funcion-4.png" alt="figura-petalos" width="100%">
                 
-                <!-- Input by bootstrap -->
+                 Input by bootstrap 
                 <div class="input-group mb-3">
                         <button  id="button" class="btn btn-outline-secondary" data-bs-toggle="hidden.bs.modal" data-bs-target="#exampleModal" type="submit" id="button-addon1">Calcular</button>
                 
-                           <!-- Modal -->
+                           < Modal 
                            <div class="modal fade" id="exampleModal" tabindex="-1">
                             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                               <div class="modal-content">
@@ -179,11 +193,12 @@
                               </div>
                             </div>
                           </div>
-                        <!-- con esta funcion limito que pongan mas de 4 digitos -->
+                         con esta funcion limito que pongan mas de 4 digitos 
                         <input onkeyup="checkForEnterKey(this.value)" id="figura" name="figura" onKeyPress="if(this.value.length==4) return false;" type="number"  class="form-control" placeholder="índica el número de figuras que quieras calcular" aria-label="Example text with button addon" aria-describedby="button-addon1">
                       </div>
                   </div> 
                   <hr>
+                -->
 
 <div class="container">
   <h1>Mosaicos</h1>
