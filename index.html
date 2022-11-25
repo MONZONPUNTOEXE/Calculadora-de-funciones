@@ -51,13 +51,15 @@
         <h1>Funciones de Petalos</h1>
         <img src="./img/petalos.png" alt="figura-petalos" width="100%">
 
+        
         <!-- Input by bootstrap -->
         <div class="input-group mb-3">
-          <button id="button" class="btn btn-outline-secondary" data-bs-toggle="hidden.bs.modal" data-bs-target="#exampleModal" type="button" id="button-addon1">Calcular</button>
+          <button  id="button" class="btn btn-outline-secondary" data-bs-toggle="hidden.bs.modal" data-bs-target="#exampleModal" type="submit" id="button-addon1">Calcular</button>
 
           <!-- con esta funcion limito que pongan mas de 4 digitos -->
-          <input id="figura" name="figura" onKeyPress="if(this.value.length==4) return false;" type="number"  class="form-control" placeholder="Indica numero de figura que quieras calcular" aria-label="Example text with button addon" aria-describedby="button-addon1">
+          <input onkeyup="checkForEnterKey(this.value)" id="figura" name="figura" onKeyPress="if(this.value.length==4) return false;" type="number"  class="form-control" placeholder="Indica numero de figura que quieras calcular" aria-label="Example text with button addon" aria-describedby="button-addon1">
         
+
         </div>
     </div> 
     

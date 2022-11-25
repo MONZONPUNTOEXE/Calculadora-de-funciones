@@ -1,5 +1,14 @@
 // T(f) = f.f
 
+function checkForEnterKey(){
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("button").click();
+    }
+}
+
+
+
 const boton = document.getElementById("button");
 const figura = document.getElementById("figura").value;
 const modalContent = document.getElementById("modal-content");
