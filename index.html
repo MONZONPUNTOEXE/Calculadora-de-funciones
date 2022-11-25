@@ -27,13 +27,7 @@
 </head>
 
 <body>
-    <!-- Modal -->
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
-  </button>
-  
-  <!-- Modal -->
+            <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
@@ -58,14 +52,14 @@
 
     <title>Funciones con Petalos</title>
     <div class="container">
-        <h1>Funciones de Petaos</h1>
+        <h1>Funciones de Petalos</h1>
         <img src="./img/petalos.png" alt="figura-petalos" width="100%">
         
         <input  type="number" id="figura" name="figura" placeholder="Coloque su figura" >
 
         <!-- Input by bootstrap -->
         <div class="input-group mb-3">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+          <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" id="button-addon1">Button</button>
           <!-- con esta funcion limito que pongan mas de 4 digitos -->
           <input onKeyPress="if(this.value.length==4) return false;" type="number"  class="form-control" placeholder="Indica numero de figura que quieras calcular" aria-label="Example text with button addon" aria-describedby="button-addon1">
         </div>
