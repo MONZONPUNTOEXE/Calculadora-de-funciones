@@ -2,6 +2,11 @@
 
 const boton = document.getElementById("button");
 const figura = document.getElementById("figura").value;
+const modalContent = document.getElementById("modal-content");
+
+
+ 
+
 
 const myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {
     keyboard: false,
@@ -23,6 +28,7 @@ boton.addEventListener('click', () =>{
         
         
     })
+    document.getElementById("figura").value=" ";
     }
     else{
         let timerInterval
@@ -50,10 +56,11 @@ Swal.fire({
     
     const petalos = 4 * figura + 2;
     document.getElementById("resultado");
-
-
+    modalContent.innerHTML='<p>soy spiderman</p>';    
+    myModal.show();
     console.log('I was closed by the timer');
-    myModal.show()
+    document.getElementById("figura").value='';
+
 // Swal.fire('La figura N° ' + figura + ' va a tener ' + petalos +' mosaicos');
 }
 })
