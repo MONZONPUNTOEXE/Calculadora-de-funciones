@@ -84,12 +84,12 @@ Swal.fire({
 // --------- Exagonales --------------
 
 
-function checkForEnterKey(){
-    if (event.keyCode === 13) {
-        event.preventDefault();
-        document.getElementById("buttonE").click();
-    }
-}
+// function checkForEnterKey(){
+//     if (event.keyCode === 13) {
+//         event.preventDefault();
+//         document.getElementById("buttonE").click();
+//     }
+// }
 
 
 
@@ -159,12 +159,12 @@ Swal.fire({
 // ------------ Triangulos -------------
 
 
-function checkForEnterKey(){
-    if (event.keyCode === 13) {
-        event.preventDefault();
-        document.getElementById("button-cuadrado").click();
-    }
-}
+// function checkForEnterKey(){
+//     if (event.keyCode === 13) {
+//         event.preventDefault();
+//         document.getElementById("button-cuadrado").click();
+//     }
+// }
 
 const botonCuadrado = document.getElementById("button-cuadrado");
 const figuraCuadrado = document.getElementById("figura-cuadrado").value;
@@ -239,12 +239,12 @@ Swal.fire({
 
 // ----------- Cuadrados 2 -------------------
 
-function checkForEnterKey(){
-    if (event.keyCode === 13) {
-        event.preventDefault();
-        document.getElementById("button-cuadrado2").click();
-    }
-}
+// function checkForEnterKey(){
+//     if (event.keyCode === 13) {
+//         event.preventDefault();
+//         document.getElementById("button-cuadrado2").click();
+//     }
+// }
 
 const botonCuadrado2 = document.getElementById("button-cuadrado2");
 const figuraCuadrado2 = document.getElementById("figura-cuadrado2").value;
@@ -319,12 +319,12 @@ Swal.fire({
 
 // ----------- Mosaicos ----------
 
-function checkForEnterKey(){
-    if (event.keyCode === 13) {
-        event.preventDefault();
-        document.getElementById("button-m").click();
-    }
-}
+// function checkForEnterKey(){
+//     if (event.keyCode === 13) {
+//         event.preventDefault();
+//         document.getElementById("button-m").click();
+//     }
+// }
 
 
 
