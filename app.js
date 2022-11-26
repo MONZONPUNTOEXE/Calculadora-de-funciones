@@ -1,12 +1,12 @@
 
 // ---------- funcion puntos ----------
 
-function checkForEnterKey(){
-    if (event.keyCode === 13) {
-        event.preventDefault();
-        document.getElementById("button-puntos").click();
-    }
-}
+// function checkForEnterKey(){
+//     if (event.keyCode === 13) {
+//         event.preventDefault();
+//         document.getElementById("button-puntos").click();
+//     }
+// }
 
 const boton = document.getElementById("button-puntos");
 const figuraP = document.getElementById("figuraPuntos").value;
