@@ -101,24 +101,25 @@
           </div>
       </div> 
       <hr>
-  
-      <!-- <div class="container">
+  <!--   ---------- Exagonales  ----- -->
+
+       <div class="container">
         <h1>Exagonales</h1>
-        <img src="./img/exagonales-funcion-2.png" alt="figura-petalos" width="100%">
+        <img src="./img/exagonales-funcion-2.png" alt="figura-exagonales" width="100%">
         
-         Input by bootstrap 
+         <!-- Input by bootstrap  -->
         <div class="input-group mb-3">
-                <button  id="button" class="btn btn-outline-secondary" data-bs-toggle="hidden.bs.modal" data-bs-target="#exampleModal" type="submit" id="button-addon1">Calcular</button>
+                <button  id="buttonE" class="btn btn-outline-secondary" data-bs-toggle="hidden.bs.modal" data-bs-target="#exampleModal-buttonE" type="submit" id="button-addon1">Calcular</button>
         
-                    Modal 
-                   <div class="modal fade" id="exampleModal" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    
+                   <div class="modal fade" id="exampleModalE" tabindex="-1">
+                    <div class="modal-dialog modal-fullscreen">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Resultado</h5>
+                          <h5 class="modal-title" id="exampleModalLabelE">Resultado</h5>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body" id="modal-content">
+                        <div class="modal-body" id="modal-contentE">
                             <p>...</p>
                         </div>
                         <div class="modal-footer">
@@ -128,29 +129,30 @@
                       </div>
                     </div>
                   </div>
-                 con esta funcion limito que pongan mas de 4 digitos 
-                <input onkeyup="checkForEnterKey(this.value)" id="figura" name="figura" onKeyPress="if(this.value.length==4) return false;" type="number"  class="form-control" placeholder="índica el número de figuras que quieras calcular" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                 <!-- con esta funcion limito que pongan mas de 4 digitos  -->
+                <input onkeyup="checkForEnterKey(this.value)" id="figuraE" name="figura" onKeyPress="if(this.value.length==4) return false;" type="number"  class="form-control" placeholder="índica el número de figuras que quieras calcular" aria-label="Example text with button addon" aria-describedby="button-addon1">
               </div>
           </div> 
-          <hr>
-
+         <hr>
+          <!--             Triángulos       -->
+             
           <div class="container">
-            <h1>Cuadrados</h1>
+            <h1>Triángulos</h1>
             <img src="./img/cuadrados-funcion-3.png" alt="figura-petalos" width="100%">
             
-             Input by bootstrap 
+             <!-- Input by bootstrap  -->
             <div class="input-group mb-3">
-                    <button  id="button" class="btn btn-outline-secondary" data-bs-toggle="hidden.bs.modal" data-bs-target="#exampleModal" type="submit" id="button-addon1">Calcular</button>
+                    <button  id="button-cuadrado" class="btn btn-outline-secondary" data-bs-toggle="hidden.bs.modal" data-bs-target="#exampleModal" type="submit" id="button-addon1">Calcular</button>
             
-                        Modal 
-                       <div class="modal fade" id="exampleModal" tabindex="-1">
-                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <!-- Modal  -->
+                       <div class="modal fade" id="exampleModal-cuadrado" tabindex="-1">
+                        <div class="modal-dialog modal-fullscreen">
                           <div class="modal-content">
                             <div class="modal-header">
                               <h5 class="modal-title" id="exampleModalLabel">Resultado</h5>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body" id="modal-content">
+                            <div class="modal-body" id="modal-content-cuadrado">
                                 <p>...</p>
                             </div>
                             <div class="modal-footer">
@@ -160,30 +162,32 @@
                           </div>
                         </div>
                       </div>
-                     con esta funcion limito que pongan mas de 4 digitos 
-                    <input onkeyup="checkForEnterKey(this.value)" id="figura" name="figura" onKeyPress="if(this.value.length==4) return false;" type="number"  class="form-control" placeholder="índica el número de figuras que quieras calcular" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                     <!-- con esta funcion limito que pongan mas de 4 digitos  -->
+                    <input onkeyup="checkForEnterKey(this.value)" id="figura-cuadrado" name="figura" onKeyPress="if(this.value.length==4) return false;" type="number"  class="form-control" placeholder="índica el número de figuras que quieras calcular" aria-label="Example text with button addon" aria-describedby="button-addon1">
                   </div>
               </div> 
 
               <hr>
 
+  <!------------------ Cuadrados 2 ----------------->
+
               <div class="container">
                 <h1>Cuadrados</h1>
                 <img src="./img/cuadrados2-funcion-4.png" alt="figura-petalos" width="100%">
                 
-                 Input by bootstrap 
+                 <!-- Input by bootstrap  -->
                 <div class="input-group mb-3">
-                        <button  id="button" class="btn btn-outline-secondary" data-bs-toggle="hidden.bs.modal" data-bs-target="#exampleModal" type="submit" id="button-addon1">Calcular</button>
+                        <button  id="button-cuadrado2" class="btn btn-outline-secondary" data-bs-toggle="hidden.bs.modal" data-bs-target="#exampleModal" type="submit">Calcular</button>
                 
-                           < Modal 
-                           <div class="modal fade" id="exampleModal" tabindex="-1">
-                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                           <!--  Modal  -->
+                           <div class="modal fade" id="exampleModal-cuadrado2" tabindex="-1">
+                            <div class="modal-dialog modal-fullscreen">
                               <div class="modal-content">
                                 <div class="modal-header">
                                   <h5 class="modal-title" id="exampleModalLabel">Resultado</h5>
                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body" id="modal-content">
+                                <div class="modal-body" id="modal-content-cuadrado2">
                                     <p>...</p>
                                 </div>
                                 <div class="modal-footer">
@@ -193,30 +197,30 @@
                               </div>
                             </div>
                           </div>
-                         con esta funcion limito que pongan mas de 4 digitos 
-                        <input onkeyup="checkForEnterKey(this.value)" id="figura" name="figura" onKeyPress="if(this.value.length==4) return false;" type="number"  class="form-control" placeholder="índica el número de figuras que quieras calcular" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                         <!-- con esta funcion limito que pongan mas de 4 digitos  -->
+                        <input onkeyup="checkForEnterKey(this.value)" id="figura-cuadrado2" name="figura" onKeyPress="if(this.value.length==4) return false;" type="number"  class="form-control" placeholder="índica el número de figuras que quieras calcular" aria-label="Example text with button addon" aria-describedby="button-addon1">
                       </div>
                   </div> 
                   <hr>
-                -->
-
+                  
+      <!----------------- Mosaicos -------------->
 <div class="container">
   <h1>Mosaicos</h1>
   <img src="./img/mosaicos-funcion-5.png" alt="figura-petalos" width="100%">
   
   <!-- Input by bootstrap -->
   <div class="input-group mb-3">
-          <button  id="button" class="btn btn-outline-secondary" data-bs-toggle="hidden.bs.modal" data-bs-target="#exampleModal" type="submit" id="button-addon1">Calcular</button>
+          <button  id="button-m" class="btn btn-outline-secondary" data-bs-toggle="hidden.bs.modal" data-bs-target="#exampleModal" type="submit" id="button-addon1">Calcular</button>
   
              <!-- Modal -->
-             <div class="modal fade" id="exampleModal" tabindex="-1">
-              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+             <div class="modal fade" id="exampleModal-m" tabindex="-1">
+              <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Resultado</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div class="modal-body" id="modal-content">
+                  <div class="modal-body" id="modal-content-m">
                       <p>...</p>
                   </div>
                   <div class="modal-footer">
@@ -227,7 +231,7 @@
               </div>
             </div>
           <!-- con esta funcion limito que pongan mas de 4 digitos -->
-          <input onkeyup="checkForEnterKey(this.value)" id="figura" name="figura" onKeyPress="if(this.value.length==4) return false;" type="number"  class="form-control" placeholder="índica el número de figuras que quieras calcular" aria-label="Example text with button addon" aria-describedby="button-addon1">
+          <input onkeyup="checkForEnterKey(this.value)" id="figura-m" name="figura" onKeyPress="if(this.value.length==4) return false;" type="number"  class="form-control" placeholder="índica el número de figuras que quieras calcular" aria-label="Example text with button addon" aria-describedby="button-addon1">
         </div>
     </div> 
     <hr>
